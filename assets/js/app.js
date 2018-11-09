@@ -11,10 +11,11 @@ losses = document.querySelector('#losses');
 ties = document.querySelector('#ties');
 splash = document.querySelector('#splash');
 game = document.querySelector('.game');
+start = document.querySelector('.start');
 
 
 // Click event listener to start game
-document.addEventListener('click', function() {
+start.addEventListener('click', function() {
   init();
 })
 
