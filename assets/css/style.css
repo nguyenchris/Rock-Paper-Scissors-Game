@@ -8,10 +8,15 @@ body {
   width: 980px;
 }
 
+img {
+  height: 80px;
+  width: 80px;
+}
+
 .players, .scores {
   float: left;
   width: 50%;
-  font-size: 2em;
+  font-size: 1.5em;
 }
 
 .game {
@@ -25,6 +30,12 @@ body {
 #splash {
   text-align: center;
 }
+
+.img {
+  display: hidden;
+}
+
+#userI
 
 #wins {
   color: green;

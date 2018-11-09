@@ -4,7 +4,7 @@ var scores = [0, 0, 0];
 computerKeys = ['r', 's', 'p'];
 
 // select DOM elements
-userKeyText = document.querySelector('#userKey');
+userKeyImg = document.querySelector('#userKey');
 computerKeyText = document.querySelector('#computerKey');
 wins = document.querySelector('#wins');
 losses = document.querySelector('#losses');
@@ -12,6 +12,8 @@ ties = document.querySelector('#ties');
 splash = document.querySelector('#splash');
 game = document.querySelector('.game');
 start = document.querySelector('.start');
+
+
 
 
 // Click event listener to start game
@@ -34,8 +36,27 @@ function init() {
 
     if (userKey == 'r' || userKey == 's' || userKey == 'p') {
 
-      computerKeyText.textContent = computerChoice;
-      userKeyText.textContent = userKey;
+      if(userKey == 'r') {
+        userKeyImg.innerHTML = '<img src="' + 'assets/images/rock.jpg">';
+        computerKeyText.innerHTML = '<img src="' + 'assets/images/rock.jpg">';
+      } else if (userKey == 's'){
+        userKeyImg.innerHTML = '<img src="' + 'assets/images/scissors.jpg">';
+        computerKeyText.innerHTML = '<img src="' + 'assets/images/scissors.jpg">';
+      } else {
+        userKeyImg.innerHTML = '<img src="' + 'assets/images/paper.jpg">';
+        computerKeyText.innerHTML = '<img src="' + 'assets/images/paper.jpg">';
+      }
+
+
+      if(computerChoice == 'r') {
+        computerKeyText.innerHTML = '<img src="' + 'assets/images/rock.jpg">';
+      } else if (computerChoice == 's'){
+        computerKeyText.innerHTML = '<img src="' + 'assets/images/scissors.jpg">';
+      } else {
+        computerKeyText.innerHTML = '<img src="' + 'assets/images/paper.jpg">';
+      }
+      // computerKeyText.textContent = computerChoice;
+      // userKeyText.textContent = userKey;
 
       // conditional statements; compare userKey to computerChoice
       // update score and add it depending on which score
