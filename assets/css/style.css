@@ -1,3 +1,25 @@
 * {
   box-sizing: border-box;
 }
+
+body {
+  margin: 0 auto;
+  text-align: center;
+  width: 980px;
+}
+
+.players, .scores {
+  float: left;
+  width: 50%;
+  font-size: 2em;
+}
+
+.game {
+  display: none;
+}
+
+#splash {
+  text-align: center;
+}
+
+
